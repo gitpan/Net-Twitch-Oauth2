@@ -1,0 +1,7 @@
+Build.PL
+lib/Net/Twitch/Oauth2.pm
+LICENSE
+MANIFEST			This list of files
+README.pod
+t/accesstoken.t
+t/Net-Twitch-Oauth2.t
