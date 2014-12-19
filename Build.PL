@@ -9,6 +9,7 @@ my $builder = Module::Build->new(
     dist_author         => 'Ronald Reed <rjreed67@gmail.com>',
     build_requires => {
         'Test::More' => '0.10',
+        'LWP::UserAgent' => '0',
     },
 );
 

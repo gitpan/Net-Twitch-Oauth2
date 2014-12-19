@@ -3,8 +3,11 @@ abstract: 'Net::Twitch::Oauth2 wrapper for Twitch.tv OAuth2'
 author:
   - 'Ronald Reed <rjreed67@gmail.com>'
 build_requires:
+  LWP::UserAgent: '0'
   Test::More: '0.10'
-dynamic_config: 0
+configure_requires:
+  Module::Build: '0.42'
+dynamic_config: 1
 generated_by: 'Module::Build version 0.421, CPAN::Meta::Converter version 2.143240'
 license: perl
 meta-spec:
@@ -14,7 +17,7 @@ name: Net-Twitch-Oauth2
 provides:
   Net::Twitch::Oauth2:
     file: lib/Net/Twitch/Oauth2.pm
-    version: '0.01'
+    version: '0.03'
 resources:
   license: http://dev.perl.org/licenses/
-version: '0.01'
+version: '0.03'

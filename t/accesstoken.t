@@ -11,21 +11,11 @@ my $app = sub {
     my $req = Plack::Request->new($env);
     my $access_token = $req->param('access_token');
     my $message = $req->param('message');
-#    if ($message =~ m/without access token/) {
-#        is $access_token, 'AccessToken', $message;
-#    } elsif ($message =~ m/with access token/) {
     if ($message =~ m/with access token/) {
         is $access_token, 'OtherToken', $message;
     } elsif ($message =~ m/with already set query/) {
         my $query = $env->{QUERY_STRING};
         ok($query !~ /limit=1000\?/);
-#        ok($query =~ /^limit=1000&access_token/);
-#    } elsif ($message =~ m/without already set query/) {
-#        my $query = $env->{QUERY_STRING};
-#        ok($query =~ /^access_token/);
-#    } elsif ($message =~ m/Get request with token and query/) {
-#        my $query = $env->{QUERY_STRING};
-#        ok($query =~ /^limit=1000&access_token=OtherToken&message/);
     }
     
     return [ 200, [ 'Content-Type' => 'text/plain' ], [ 'OK' ] ];
