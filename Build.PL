@@ -10,6 +10,7 @@ my $builder = Module::Build->new(
     build_requires => {
         'Test::More' => '0.10',
         'LWP::UserAgent' => '0',
+        'JSON::Any' => '0',
     },
 );
 
