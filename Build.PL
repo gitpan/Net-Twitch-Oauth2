@@ -11,6 +11,9 @@ my $builder = Module::Build->new(
         'Test::More' => '0.10',
         'LWP::UserAgent' => '0',
         'JSON::Any' => '0',
+        'URI' => '0',
+        'URI::Escape' => '0',
+        'Carp' => '0',
     },
 );
 

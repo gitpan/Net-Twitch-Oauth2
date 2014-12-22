@@ -16,9 +16,12 @@
    "prereqs" : {
       "build" : {
          "requires" : {
+            "Carp" : "0",
             "JSON::Any" : "0",
             "LWP::UserAgent" : "0",
-            "Test::More" : "0.10"
+            "Test::More" : "0.10",
+            "URI" : "0",
+            "URI::Escape" : "0"
          }
       },
       "configure" : {
@@ -30,7 +33,7 @@
    "provides" : {
       "Net::Twitch::Oauth2" : {
          "file" : "lib/Net/Twitch/Oauth2.pm",
-         "version" : "0.04"
+         "version" : "0.05"
       }
    },
    "release_status" : "stable",
@@ -39,5 +42,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.04"
+   "version" : "0.05"
 }
