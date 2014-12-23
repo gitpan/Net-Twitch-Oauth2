@@ -11,7 +11,7 @@ use Carp;
 use constant ACCESS_TOKEN_URL => 'https://api.twitch.tv/kraken/oauth2/token';
 use constant AUTHORIZE_URL => 'https://api.twitch.tv/kraken/oauth2/authorize';
  
-our $VERSION = '0.05';
+our $VERSION = '0.06';
  
 sub new {
     my ($class,%options) = @_;

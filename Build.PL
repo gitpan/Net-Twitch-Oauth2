@@ -7,13 +7,18 @@ my $builder = Module::Build->new(
     license             => 'perl',
     dist_abstract       => 'Net::Twitch::Oauth2 wrapper for Twitch.tv OAuth2',
     dist_author         => 'Ronald Reed <rjreed67@gmail.com>',
-    build_requires => {
-        'Test::More' => '0.10',
+    requires => {
         'LWP::UserAgent' => '0',
         'JSON::Any' => '0',
         'URI' => '0',
         'URI::Escape' => '0',
         'Carp' => '0',
+    },
+    build_requires => {
+        'Test::More' => '0.10',
+        'Test::Exception' => '0',
+        'Test::MockObject' => '0',
+        'Test::MockModule' => '0',
     },
 );
 
